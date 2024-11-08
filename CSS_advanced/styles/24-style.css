@@ -74,7 +74,7 @@ a:link{
     text-align : center;
 }
   
-  .nav .nav-item {
+.nav .nav-item {
     font-family: var(--nav-item-font-family);
     font-weight: var(--nav-item-font-weight);
     font-size: var(--nav-item-font-size);
@@ -83,12 +83,12 @@ a:link{
     margin: var(--nav-item-margin);
 }
   
-  .nav .nav-link {
+.nav .nav-link {
     display: block;
     padding: 0.5rem 1rem;
 }
   
-  .nav .nav-link:hover {
+.nav .nav-link:hover {
     color: var(--nav-item-link-hover);
 }
   
@@ -111,6 +111,22 @@ a:active {
 
 .card-category {
   color: var(--color-primary);
+}
+
+.card-services .card-title {
+    margin: 0;
+}
+  
+.card-services a {
+    display: block;
+    padding: 2rem;
+    background-color: var(--color-light-grey);
+}
+  
+.card-services a:hover {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    text-decoration: none;
 }
 
 .section {
@@ -153,17 +169,14 @@ ul.row {
     padding: 0;
     list-style: none;
 }
+
   
-  .col-1-3 {
+.col-1-3 {
     width: 33.33%;
-    float: left;
-    padding: 0.5rem;
 }
   
-  .col-1-2 {
+.col-1-2 {
     width: 50%;
-    float: left;
-    padding: 0.5rem;
 }
 
 .container {
@@ -195,4 +208,27 @@ h1, h2, h3, h4, h5, h6 {
     content: "";
     display: table;
     clear: both;
+}
+
+[class^="col-"] {
+    float: left;
+    padding: 0.5rem;
+}
+
+[data-section-theme="dark"] {
+    --text-color: var(--color-white);
+    --section-title-color: var(--color-white);
+    background-color: var(--color-black);
+}
+
+.footer-address {
+    color: var(--text-color);
+}
+  
+.social-link {
+    display: block;
+}
+  
+.social-link > svg {
+    fill: var(--text-color);
 }
